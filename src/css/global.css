@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+#app {
+  font-family: 'Roboto';
+}
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html{
+  overflow: auto;
+}
+/* ::-webkit-scrollbar{
+  display:none;
+} */
+
+.no-drag {
+  -webkit-app-region: no-drag; 
+}
+.drag {
+  -webkit-app-region: drag; 
+}
+
+/* .scroll-component {
+  overflow: auto;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}  
