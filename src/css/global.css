@@ -3,7 +3,27 @@
 
 #app {
   font-family: 'Roboto';
+  position:relative;
+  height:100%;
 }
+
+body {
+  height:100vh;
+}
+
+.application {
+  height:100%;
+}
+
+main {
+  height:100%;
+}
+
+.scroll-here {
+  max-height:100%;
+ overflow-y: scroll;
+}
+
 *.unselectable {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
@@ -17,7 +37,7 @@
 }
 
 html{
-  overflow: auto;
+  overflow: hidden;
 }
 /* ::-webkit-scrollbar{
   display:none;

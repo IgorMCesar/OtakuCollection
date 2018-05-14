@@ -4,8 +4,7 @@
       <el-table
         :data="tableData3"
         style="width: 100%"
-        height="100%"
-        fixed
+        height="100vh"
         >
         <el-table-column
           prop="date"
@@ -137,16 +136,31 @@
 
   .full {
     height: 100%;
-    max-height: 100%;
+    max-height: 100vh;
+    // overflow: auto;
   }
 
-  .fixed-stuff {
-    position: fixed;
-    transition: none;
-    max-width: 100%;
-    overflow: scroll;
-    will-change: transform;
-  }
+  // .fixed-stuff {
+  //   position: fixed;
+  //   transition: none;
+  //   max-width: 100%;
+  //   overflow: hidden;
+  //   will-change: transform;
+  // }
+
+  // .el-tabs__content {
+  //   max-height: 100vh;
+  //   overflow: hidden;
+  // }
+  // .el-table__body-wrapper {
+  //   max-height: 100vh;
+  //   overflow: scroll;
+  // }
+  
+  // .is-scrolling-none{
+  //   max-height: 100vh;
+  //   overflow: scroll;
+  // }
 
 </style>
 
