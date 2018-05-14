@@ -1,10 +1,10 @@
 <template>
-  <el-tabs type="border-card" class="full">
+  <el-tabs type="border-card">
     <el-tab-pane label="Watching">
       <el-table
         :data="tableData3"
         style="width: 100%"
-        height="100vh"
+        height="90%"
         >
         <el-table-column
           prop="date"
@@ -140,6 +140,11 @@
     // overflow: auto;
   }
 
+  .el-tabs,
+  .el-tab-pane {
+    height:100% !important;
+  }
+
   // .fixed-stuff {
   //   position: fixed;
   //   transition: none;
@@ -164,3 +169,8 @@
 
 </style>
 
+<style>
+  .el-tabs__content{
+    height: 100% !important;
+  }
+</style>
