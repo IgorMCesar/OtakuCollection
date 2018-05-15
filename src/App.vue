@@ -9,9 +9,9 @@
       <v-content>
         <!-- <v-container fluid> -->
           <v-layout wrap fill-height fill-width>
-            <v-flex wrap>
+            <!-- <v-flex wrap> -->
               <router-view></router-view>
-            </v-flex>
+            <!-- </v-flex> -->
           </v-layout>
         <!-- </v-container> -->
       </v-content>
