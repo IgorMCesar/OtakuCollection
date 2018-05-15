@@ -1,7 +1,7 @@
 <template>
   <el-tabs type="border-card">
     <el-tab-pane label="Watching">
-      <el-table :data="tableData3" style="width: 100%" height="calc(100% - 39px)">
+      <el-table :data="tableData3" border style="width: 100%" height="calc(100% - 38px)">
         <el-table-column fixed prop="date" label="Date" width="150">
         </el-table-column>
         <el-table-column prop="name" label="Name" width="120">
@@ -125,16 +125,15 @@
     width:100% !important;
   }
 
+.el-table--border::after{
+  position: relative;
+}
 </style>
 
 <style>
   .el-tabs__content{
     height: 100% !important;
-    padding: 0px 0px 0px 10px !important;
-  }
-
-  .el-tabs__nav-wrap {
-    margin: 0px;
+    padding: 10px 0px 0px 0px !important;
   }
 
   .el-tabs__nav-scroll,
