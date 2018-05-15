@@ -56,6 +56,10 @@ html{
   height: 10px;
 }
 
+::-webkit-scrollbar-corner {
+   border:red;
+  }
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 

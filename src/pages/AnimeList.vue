@@ -1,7 +1,7 @@
 <template>
   <el-tabs type="border-card">
     <el-tab-pane label="Watching">
-      <el-table :data="tableData3" style="width: 100%" height="calc(100% - 37px)">
+      <el-table :data="tableData3" style="width: 100%" height="calc(100% - 39px)">
         <el-table-column fixed prop="date" label="Date" width="150">
         </el-table-column>
         <el-table-column prop="name" label="Name" width="120">
@@ -112,44 +112,34 @@
 
 <style lang="scss" scoped>
 
-  .full {
-    height: 100%;
-    max-height: 100vh;
-    // overflow: auto;
+  .el-tabs {
+    border: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height:100% !important;
+    width:100% !important;
   }
-
-  .el-tabs,
+  
   .el-tab-pane {
     height:100% !important;
     width:100% !important;
   }
-
-  // .fixed-stuff {
-  //   position: fixed;
-  //   transition: none;
-  //   max-width: 100%;
-  //   overflow: hidden;
-  //   will-change: transform;
-  // }
-
-  // .el-tabs__content {
-  //   max-height: 100vh;
-  //   overflow: hidden;
-  // }
-  // .el-table__body-wrapper {
-  //   max-height: 100vh;
-  //   overflow: scroll;
-  // }
-  
-  // .is-scrolling-none{
-  //   max-height: 100vh;
-  //   overflow: scroll;
-  // }
 
 </style>
 
 <style>
   .el-tabs__content{
     height: 100% !important;
+    padding: 0px 0px 0px 10px !important;
+  }
+
+  .el-tabs__nav-wrap {
+    margin: 0px;
+  }
+
+  .el-tabs__nav-scroll,
+  .el-tabs__header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 </style>

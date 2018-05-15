@@ -10,7 +10,9 @@
         <!-- <v-container fluid> -->
           <v-layout wrap fill-height fill-width>
             <!-- <v-flex wrap> -->
-              <router-view></router-view>
+              <div class="padding-content">
+                <router-view></router-view>
+              </div>
             <!-- </v-flex> -->
           </v-layout>
         <!-- </v-container> -->
@@ -31,5 +33,11 @@
 <style lang="scss">
   @import './css/iconfont';
   @import './css/global';
+
+  .padding-content {
+    height:100%;
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+  }
 
 </style>
